@@ -1,0 +1,117 @@
+@charset "UTF-8";
+html {
+  font-size: 15px; }
+
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+.encabezado {
+  background: url("../images/fondo-encabezado.jpg") center top;
+  background-size: cover;
+  color: #fff;
+  min-height: 100vh;
+  overflow: hidden; }
+
+.bg-faded {
+  background-color: transparent; }
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+  border-bottom: 5px solid transparent;
+  -webkit-transition: all .5s ease;
+          transition: all .5s ease; }
+
+.navbar-light .navbar-nav .active > .nav-link {
+  color: white;
+  border-bottom: 5px solid white; }
+
+.navbar-light .navbar-nav .open > .nav-link,
+.navbar-light .navbar-nav .open > .nav-link:focus,
+.navbar-light .navbar-nav .open > .nav-link:hover,
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .active > .nav-link:focus,
+.navbar-light .navbar-nav .active > .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.open,
+.navbar-light .navbar-nav .nav-link.open:focus,
+.navbar-light .navbar-nav .nav-link.open:hover,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.active:focus,
+.navbar-light .navbar-nav .nav-link.active:hover {
+  color: white; }
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+  color: white;
+  border-bottom: 5px solid white; }
+
+.navbar-fixed-top {
+  top: 2rem; }
+
+.texto-encabezado {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center; }
+
+.texto-encabezado h3 {
+  margin: 0 0 4rem 0; }
+
+.btn-primary {
+  color: #fff;
+  background-color: #12AFAF;
+  border-color: transparent;
+  -webkit-transition: all .5s ease;
+          transition: all .5s ease; }
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #28E0E0;
+  border-color: transparent; }
+
+.flecha-bajar {
+  bottom: 1rem;
+  padding: 0 20px;
+  position: absolute;
+  width: 100%;
+  text-align: center; }
+
+.flecha-bajar a {
+  display: inline-block;
+  font-size: 3.5rem;
+  color: #fff;
+  -webkit-animation: flecha-animada 1.5s ease-in-out infinite;
+          animation: flecha-animada 1.5s ease-in-out infinite; }
+
+@-webkit-keyframes flecha-animada {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  65% {
+    -webkit-transform: translateY(6px);
+            transform: translateY(6px); }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+@keyframes flecha-animada {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  65% {
+    -webkit-transform: translateY(6px);
+            transform: translateY(6px); }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+.row div {
+  background: blue; }
+
+.row article {
+  background: red; }
+
+/** Probando estilos mobile first
+Los esyilos sin medias queres son para los dispositivos mas peque├▒os
+Luego vamos agregando estilos mas complejos asi: Por ejemplo para monitores desdwe 544px;
+*/
+@media (min-width: 544px) {
+  body {
+    background: red; } }
